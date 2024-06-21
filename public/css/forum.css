@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+nav {
+    background-color: #444;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 0;
+    display: block;
+}
+
+main {
+    padding: 20px;
+}
+
+.tips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tip1 {
+    background-color: white;
+    background-image: url(/images/forum1.png?3c2a7682176d5bedfc41e536789ea08f);
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    box-sizing: border-box;
+}
+
+.tip2 {
+    background-color: white;
+    background-image: url(/images/forum2.png?c87f2afbcabe6efa23fa0ca31b3cd2b2);
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    box-sizing: border-box;
+}
+
+.tip3 {
+    background-color: white;
+    background-image: url(/images/forum3.png?b3f6304cec5df88fc1aa4e403d6cdcf2);
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    box-sizing: border-box;
+}
+
+.tip4 {
+    background-color: white;
+    background-image: url(/images/forum4.png?9531b46da3078a2b9815eeca68dec343);
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    box-sizing: border-box;
+}
+
+
+
+.tip img {
+    max-width: 100%;
+    height: auto;
+}
+
+.tip h2 {
+    color: #333;
+}
+
+.tip p {
+    color: #666;
+}
+
+.tip button {
+    background-color: #8bc34a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.tip button:hover {
+    background-color: #7cb342;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.footer-links a {
+    color: white;
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+.footer-contact h3 {
+    margin-top: 0;
+}
+
+.footer-contact input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.footer-contact button {
+    background-color: #8bc34a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.footer-contact button:hover {
+    background-color: #7cb342;
+}
+
+.footer-bottom {
+    background-color: #222;
+    color: #bbb;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+

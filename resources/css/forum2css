@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-content img.profile-pic {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.main-content img.food-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.article-text {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.comments-section {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.comments-section h2 {
+    margin-bottom: 20px;
+}
+
+.comment {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.comment.reply {
+    margin-left: 40px;
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+}
+
+.comment-pic {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.comment-details {
+    display: flex;
+    align-items: center;
+}
+
+.username {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.time {
+    color: #999;
+    margin-right: 10px;
+}
+
+.reply-link, .delete-link, .edit-link {
+    color: #007BFF;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.comment-text {
+    margin: 10px 0;
+}
+
+.add-comment {
+    display: flex;
+    align-items: flex-start;
+}
+
+.add-comment img.comment-pic {
+    margin-right: 10px;
+}
+
+.add-comment textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.send-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
