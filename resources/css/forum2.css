@@ -1,11 +1,12 @@
+/* Body styling */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    
 }
 
+/* Header styling */
 header {
     background-color: #333;
     color: white;
@@ -16,9 +17,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
     padding: 0 20px;
+}
+
+.header-content img{
+    background-image: url('../assets/profile.png');
 }
 
 .header-content img.profile-pic {
@@ -27,11 +32,11 @@ header {
     width: 50px;
 }
 
+
+
 header nav ul {
     list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
 }
 
 header nav ul li {
@@ -43,19 +48,25 @@ header nav ul li a {
     text-decoration: none;
 }
 
+/* Main content styling */
+
+
 .main-content {
+    /* background-image: url('../assets/forum1.png'); */
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .main-content img.food-image {
-    width: 100%;
-    height: auto;
-    display: block;
+    background-image: url('../assets/forum1.png');
+    width: 25.4cm;
+    height: 10cm;
+    display: flex;
     margin-bottom: 20px;
+    margin-left: 3cm;
 }
 
 .article-text {
@@ -63,12 +74,13 @@ header nav ul li a {
     line-height: 1.6;
 }
 
+/* Comments section styling */
 .comments-section {
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .comments-section h2 {
@@ -90,7 +102,10 @@ header nav ul li a {
     align-items: center;
 }
 
+
+
 .comment-pic {
+    /* background-image: url("..assets/profile.png"); */
     border-radius: 50%;
     height: 40px;
     width: 40px;
@@ -122,6 +137,7 @@ header nav ul li a {
     margin: 10px 0;
 }
 
+/* Add comment section styling */
 .add-comment {
     display: flex;
     align-items: flex-start;
@@ -152,15 +168,83 @@ header nav ul li a {
     margin-left: 10px;
 }
 
+/* Footer styling */
 footer {
     background-color: #333;
     color: white;
     padding: 20px 0;
-    text-align: center;
+    margin-top: 50px;
 }
 
-.footer-content a {
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left {
+    flex: 1;
+}
+
+.footer-left ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-left ul li {
+    margin-bottom: 10px;
+}
+
+.footer-left ul li a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
+}
+
+.footer-right {
+    flex: 1;
+    text-align: right;
+}
+
+.footer-right form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.footer-right label {
+    margin-right: 10px;
+}
+
+.footer-right input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.footer-right button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #555;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-right button:hover {
+    background-color: #444;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom span {
+    display: block;
+    margin: 5px 0;
 }

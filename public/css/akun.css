@@ -2,53 +2,58 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background-color: #f4f4f4;
 }
 
-header {
+.header {
     background-color: #333;
     color: white;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
     align-items: center;
 }
 
-.header-left {
-    display: flex;
-    align-items: center;
+.header h1 {
+    margin: 0;
 }
 
-.profile-pic {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-}
-
-nav a {
+.header nav a {
     color: white;
-    margin: 0 10px;
     text-decoration: none;
+    margin: 0 15px;
 }
 
-main {
+img.header{
+    background-image: url(/images/profile.png?45e9c42463140e719fe10b8acc180a2a);
+}
+
+.profile-container {
+    max-width: 900px;
+    margin: 20px auto;
     padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .profile-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(229, 3, 3, 0.1);
-    margin-bottom: 20px;
 }
 
-.profile-header-pic {
-    background-image: url(/images/forum2.png?c87f2afbcabe6efa23fa0ca31b3cd2b2);
+.profile-picture{
+    /* background-image: url('../assets/forum1.png'); */
+}
+img.profile-picture {
+    /* background-image: url('../assets/profile.png'); */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-image: url(/images/profile.png?45e9c42463140e719fe10b8acc180a2a);
 }
 
 .profile-info {
@@ -56,16 +61,16 @@ main {
     margin-left: 20px;
 }
 
-.profile-info h1 {
+.profile-info h2 {
     margin: 0;
 }
 
 .profile-info p {
-    margin: 5px 0 0 0;
     color: gray;
+    margin: 5px 0 0;
 }
 
-.edit-btn {
+.edit-button {
     background-color: #007bff;
     color: white;
     border: none;
@@ -74,70 +79,40 @@ main {
     cursor: pointer;
 }
 
-.edit-btn:hover {
-    background-color: #0056b3;
-}
-
 .profile-form {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
+    flex: 1 1 45%;
+    margin: 10px;
 }
 
-label {
+.form-group label {
+    display: block;
     margin-bottom: 5px;
-    color: gray;
 }
 
-input[type="text"] {
+.form-group input,
+.form-group select {
+    width: 100%;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 .email-section {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
 }
 
-.email-section h2 {
-    margin-top: 0;
-}
-
-.email-entry {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.email-icon {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-}
-
-.add-email-btn {
-    background-color: #f8f9fa;
-    color: #007bff;
-    border: 1px solid #007bff;
+.add-email-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
 }
-
-.add-email-btn:hover {
-    background-color: #007bff;
-    color: white;
-}
-
 

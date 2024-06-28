@@ -2,17 +2,22 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    background-image: url(/images/image.jpg?f8d998ab6414d13168969abfcc1c8dd0); /* Add the image URL here */
+    background-image: url(/images/image.jpg?f8d998ab6414d13168969abfcc1c8dd0); /* Replace with actual path to your image */
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 nav {
     background-color: #444;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 10px;
     display: flex;
     justify-content: center;
 }
@@ -24,28 +29,19 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 15px 0;
+    padding: 15px;
     display: block;
 }
 
 .header {
-    background-size: cover;
-    background-position: center;
-    color: white;
     text-align: center;
+    color: white;
     padding: 50px 0;
+    background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay */
 }
 
 .header-content {
     position: relative;
-}
-
-.menu-icon {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    font-size: 24px;
-    cursor: pointer;
 }
 
 .logo {
@@ -59,10 +55,11 @@ nav ul li a {
 
 .search-bar input {
     padding: 10px;
-    width: 300px;
+    width: 250px;
     border: none;
     border-radius: 5px;
     font-size: 16px;
+    margin-right: 10px;
 }
 
 .search-bar .camera-icon {
@@ -77,14 +74,20 @@ nav ul li a {
 .about-section {
     padding: 50px;
     text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* Lighten background */
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
 }
 
 .about-section h2 {
     font-size: 36px;
+    color: #333;
 }
 
 .about-content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 30px;
 }
@@ -95,11 +98,13 @@ nav ul li a {
     margin: 10px;
     border-radius: 10px;
     width: 300px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: left;
 }
 
 .about-box h3 {
     margin-top: 0;
+    font-size: 24px;
 }
 
 footer {
@@ -129,6 +134,15 @@ footer {
     border: none;
     border-radius: 5px;
     margin-right: 10px;
+}
+
+.footer-email button {
+    padding: 10px;
+    background-color: #444;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
 }
 
 .footer-bottom {

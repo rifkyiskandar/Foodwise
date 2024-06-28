@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FoodWise</title>
-    <link rel="stylesheet" href="{{asset("css/output.css")}}">
+    <link rel="stylesheet" href="{{asset('css/output.css')}}">
 </head>
 <body>
     <header>
@@ -14,12 +15,12 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Account</a></li>
-                <li><a href="#">Plans</a></li>
-                <li><a href="#">Calculate Calories</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Home</a></li>
+                <li><a href="/akun">Account</a></li>
+                <li><a href="/diet">Plans</a></li>
+                <li><a href="/hitungkalori">Calculate Calories</a></li>
+                <li><a href="/forum">Community</a></li>
+                <li><a href="/home">About</a></li>
+                <li><a href="/home">Home</a></li>
             </ul>
         </nav>
     </header>
@@ -29,28 +30,29 @@
         </div>
         <div class="content">
             <div class="food-image">
-                <img src="food.jpg" alt="Food Image">
+                <img src="food.jpg" alt="Food Image" id="uploaded-food-image">
             </div>
             <div class="nutrition-info">
                 <div class="nutrition">
                     <span>Protein</span>
-                    <span>34 Gram</span>
+                    <span>{{ $totalProtein }} Gram</span>
                 </div>
                 <div class="nutrition">
                     <span>Calories</span>
-                    <span>418 Gram</span>
+                    <span>{{ $totalCalories }} Kcal</span>
                 </div>
                 <div class="nutrition">
                     <span>Fat</span>
-                    <span>14 Gram</span>
+                    <span>{{ $totalFat }} Gram</span>
                 </div>
                 <div class="nutrition">
                     <span>Carbo</span>
-                    <span>30 Gram</span>
+                    <span>{{ $totalCarbohydrates }} Gram</span>
                 </div>
             </div>
             <div class="create-own">
-                <span>Or Create Your Own Food Calculate</span>
+                <a href="/food"><span>Or Create Your Own Food Calculate</span></a>
+
             </div>
         </div>
     </main>
@@ -79,5 +81,13 @@
             <span>Design with love by FoodWise Studios 2024. All right reserved</span>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const foodImage = localStorage.getItem('foodImage');
+            if (foodImage) {
+                document.getElementById('uploaded-food-image').src = foodImage;
+            }
+        });
+    </script>
 </body>
 </html>

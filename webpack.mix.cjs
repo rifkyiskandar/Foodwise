@@ -7,6 +7,7 @@ const mix6 = require('laravel-mix');
 const mix7 = require('laravel-mix');
 //const mix8 = require('laravel-mix');
 const mix9 = require('laravel-mix');
+const mix10 = require('laravel-mix');
 
 mix.css('resources/css/homepage.css', 'public/css');
 
@@ -21,3 +22,4 @@ mix6.css('resources/css/hitungkalori.css', 'public/css');
 mix7.css('resources/css/output.css', 'public/css');
 //mix8.css('resources/css/forum2.css', 'public/css');
 mix9.css('resources/css/diet.css', 'public/css');
+mix10.css('resources/css/forum2.css', 'public/css');

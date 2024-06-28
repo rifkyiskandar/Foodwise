@@ -10,7 +10,7 @@
     <div class="container">
         <div class="form-container">
             <h1>REGISTRATION</h1>
-            <form>
+            <form action="/login">
                 <input type="text" placeholder="Nama / Username" required>
                 <input type="email" placeholder="Email" required>
                 <input type="password" placeholder="Password" required>

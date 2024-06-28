@@ -10,17 +10,17 @@
     <header>
         <div class="header-container">
             <div class="profile">
-                <img src="profile-picture.jpg" alt="Profile Picture">
+                <img src="/image.png" alt="Profile Picture">
                 <span>Rifky</span>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Account</a></li>
-                    <li><a href="#">Plans</a></li>
-                    <li><a href="#">Calculate Calories</a></li>
-                    <li><a href="#">Community</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="/akun">Account</a></li>
+                    <li><a href="/diet">Plans</a></li>
+                    <li><a href="/hitungkalori">Calculate Calories</a></li>
+                    <li><a href="/forum">Community</a></li>
+                    <li><a href="/home">About</a></li>
+                    <li><a href="/home">Home</a></li>
                 </ul>
             </nav>
         </div>

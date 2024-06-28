@@ -1,10 +1,11 @@
 {
     "/css/hitungkalori.css": "/css/hitungkalori.css",
     "/css/akun.css": "/css/akun.css",
+    "/css/regist.css": "/css/regist.css",
     "/css/login.css": "/css/login.css",
     "/css/forum.css": "/css/forum.css",
     "/css/homepage.css": "/css/homepage.css",
+    "/css/forum2.css": "/css/forum2.css",
     "/css/diet.css": "/css/diet.css",
-    "/css/output.css": "/css/output.css",
-    "/css/regist.css": "/css/regist.css"
+    "/css/output.css": "/css/output.css"
 }

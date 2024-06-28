@@ -23,6 +23,8 @@ header {
     width: 40px;
     height: 40px;
     margin-right: 10px;
+    background-image: url(/images/profile.png?45e9c42463140e719fe10b8acc180a2a);
+
 }
 
 nav a {
@@ -97,27 +99,31 @@ input[type="text"] {
 footer {
     background-color: #333;
     color: white;
-    padding: 20px;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.footer-container {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .footer-left {
-    display: flex;
-}
-
-.logo {
-    width: 50px;
-    margin-right: 20px;
+    flex: 1;
 }
 
 .footer-left ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .footer-left ul li {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .footer-left ul li a {
@@ -126,16 +132,47 @@ footer {
 }
 
 .footer-right {
+    flex: 1;
     text-align: right;
 }
 
-.footer-right input {
-    padding: 5px;
+.footer-right form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.footer-right label {
     margin-right: 10px;
 }
 
-.send-btn {
-    padding: 5px 10px;
+.footer-right input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.footer-right button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #555;
+    color: white;
+    border-radius: 5px;
     cursor: pointer;
+}
+
+.footer-right button:hover {
+    background-color: #444;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom span {
+    display: block;
+    margin: 5px 0;
 }
 
